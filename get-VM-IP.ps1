@@ -20,7 +20,7 @@ catch{
 $i = 0
 while (!$centosIPs -and ($i -le 15)){
     write-host "No IPs yet"
-    sleep -Seconds 4
+    Start-Sleep -Seconds 4
     $i++
     if($i -eq 15){
     Write-Host write-host "An error occurred and no IP was returned.`nPlease validate the VM." -ForegroundColor Red
